@@ -84,9 +84,5 @@ I changed the `outline: none` rule to a visible focus indicator.
 
 ![screenshot](<tab button after-3.png>)
 
-```css  
-a:focus {  
-  outline: 3px solid #0077cc;  
-  outline-offset: 2px;  
-}  
+
 
