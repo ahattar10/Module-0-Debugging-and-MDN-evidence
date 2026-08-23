@@ -82,10 +82,11 @@ Following this guidance, I added a visible outline back to the focused links.
 
 I changed the `outline: none` rule to a visible focus indicator.
 
+![screenshot](<tab button after-3.png>)
+
 ```css  
 a:focus {  
   outline: 3px solid #0077cc;  
   outline-offset: 2px;  
 }  
 
-![screenshot](<tab button after.png>)
