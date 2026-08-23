@@ -26,7 +26,8 @@ nav {
 }
 
 a:focus {
-  outline: none;
+  outline: 3px solid #0077cc;
+  outline-offset: 2px;
 }
 
 main {
