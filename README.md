@@ -88,4 +88,4 @@ a:focus {
   outline-offset: 2px;  
 }  
 
-![screenshot](<tab button after-2.png>)
+![screenshot](<tab button after.png>)
