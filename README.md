@@ -62,9 +62,9 @@ The page removed the outline from focused links. When I pressed Tab to move thro
 
 I opened DevTools and checked the `:focus` state on a link. The rule being applied was `outline: none`, which removed the focus indicator.
 
-![screenshot](<tab button before-2.png>)
+![screenshot](<tab button before-1.png>)
 
-![screenshot](<focus is not correct-3.png>)
+![screenshot](<focus is not correct-1.png>)
 
 **Root cause:**
 
@@ -82,7 +82,7 @@ Following this guidance, I added a visible outline back to the focused links.
 
 I changed the `outline: none` rule to a visible focus indicator.
 
-![screenshot](<tab button after-3.png>)
+![screenshot](<tab button after-1.png>)
 
 
 
