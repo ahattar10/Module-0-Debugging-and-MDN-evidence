@@ -109,8 +109,8 @@ The grid used hard-coded pixel widths for its three columns instead of flexible 
 MDN's [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns) page explains the `fr` unit:
 
 > "Is a non-negative dimension with the unit fr specifying the track's flex factor. Each `<flex>`-sized track takes a share of the remaining space in proportion to its flex factor."
-
 ![MDN grid-template-columns page showing fr unit](<MDN grid_template_flex.png>)
+
 
 Following this guidance, I changed the fixed pixel columns to flexible fractions so the cards expand and contract with the container.
 
