@@ -84,5 +84,38 @@ I changed the `outline: none` rule to a visible focus indicator.
 
 ![screenshot](<tab button after-1.png>)
 
+---
 
+## Issue 3: Card grid columns overflow the container
 
+**Condition and symptom:**
+
+The card section used fixed-width columns that overflowed the main content area. The three cards did not fit inside the white container and extended past its right edge.
+
+**Evidence:**
+
+I opened DevTools and inspected the `.cards` section. The grid rule at `styles.css:47` set the columns to fixed pixel widths:
+
+![screenshot](<cards dont fit before.png>)
+
+The grid was set to `grid-template-columns: 300px 300px 300px`, which totals 932px including gaps. The main element provides only 896px of usable width after its padding, so the cards overflowed the container.
+
+**Root cause:**
+
+The grid used hard-coded pixel widths for its three columns instead of flexible sizing. The fixed columns exceeded the available space inside the main element.
+
+**MDN authority:**
+
+MDN's [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns) page explains the `fr` unit:
+
+> "Is a non-negative dimension with the unit fr specifying the track's flex factor. Each `<flex>`-sized track takes a share of the remaining space in proportion to its flex factor."
+
+![MDN grid-template-columns page showing fr unit](<MDN grid_template_flex.png>)
+
+Following this guidance, I changed the fixed pixel columns to flexible fractions so the cards expand and contract with the container.
+
+**Correction:**
+
+I changed the grid columns from fixed pixels to flexible fractions. 
+
+![screenshot](<cards after .png>)
