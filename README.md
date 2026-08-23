@@ -8,7 +8,7 @@ Debugging exercise for `index.html` and `styles.css`, documented with MDN citati
 
 - Nu HTML Checker
 - MDN Documentation
-
+- Chrome Devtools
 ---
 
 ## Issue 1: Heading order out of sequence
@@ -38,3 +38,37 @@ I changed the earlier heading from H3 to H2 so the heading levels progress in or
 After the fix, the Nu HTML Checker reported no errors.
 <img width="1030" height="786" alt="Nu_HTML validatior after" src="https://github.com/user-attachments/assets/489dbc1f-439e-492b-b842-f08df9a60aa7" />
 
+---
+
+## Issue 2: Focus outline removed from links
+
+**What I observed:**
+
+The page removed the outline from focused links. When I pressed Tab to move through the page, there was no visible indicator.
+
+I opened DevTools and checked the `:focus` state on a link. The rule being applied was `outline: none`, which removed the focus indicator.
+
+![focus](<tab button before.png>)
+
+![focus](<focus is not correct.png>)
+
+MDN's [focus](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus) page states: 
+
+> "Never just remove the focus outline (visible focus indicator) without replacing it with a focus outline that will pass WCAG 2.1 SC 1.4.11 Non-Text Contrast."
+
+Following this guidance, I added a visible outline back to the focused links.
+
+**Fix applied:**
+
+I changed the `outline: none` rule to a visible focus indicator.  
+
+```css
+a:focus {
+  outline: 3px solid #0077cc;
+  outline-offset: 2px;
+}
+```
+
+After the fix, the blue outline appears on each link as I Tab through the page.
+
+![focus](<tab button after.png>)
