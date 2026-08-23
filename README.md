@@ -48,7 +48,7 @@ I changed the earlier heading from H3 to H2 so the heading levels progress in or
 - **Expected result:** The validator reports no heading errors.
 - **Actual result:** After the fix, the Nu HTML Checker reported no errors.
 
-<img width="1030" height="786" alt="Nu_HTML validatior after" src="https://github.com/user-attachments/assets/489dbc1f-439e-492b-b842-f08df9a60aa7" />
+<img width="1030" height="786" alt="Nu HTML validator after" src="https://github.com/user-attachments/assets/489dbc1f-439e-492b-b842-f08df9a60aa7" />
 
 ---
 
@@ -62,9 +62,9 @@ The page removed the outline from focused links. When I pressed Tab to move thro
 
 I opened DevTools and checked the `:focus` state on a link. The rule being applied was `outline: none`, which removed the focus indicator.
 
-![focus](<tabbuttonbefore.png>)
+![screenshot](<tab button before-2.png>)
 
-![focus](<focusisnotcorrect.png>)
+![screenshot](<focus is not correct-3.png>)
 
 **Root cause:**
 
