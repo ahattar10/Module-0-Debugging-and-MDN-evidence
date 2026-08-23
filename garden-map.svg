@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-labelledby="title desc">
+  <title id="title">Community garden map</title>
+  <desc id="desc">Three garden beds connected by a central walking path.</desc>
+  <rect width="600" height="240" fill="#eef4e8"/>
+  <path d="M0 105 H600 V135 H0Z" fill="#c7b99d"/>
+  <rect x="45" y="30" width="140" height="55" rx="8" fill="#75a85d"/>
+  <rect x="230" y="30" width="140" height="55" rx="8" fill="#75a85d"/>
+  <rect x="415" y="155" width="140" height="55" rx="8" fill="#75a85d"/>
+</svg>
