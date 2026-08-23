@@ -34,3 +34,7 @@ Following this guidance, I corrected the heading order so the levels progress wi
 **Fix applied:**
 
 I changed the earlier heading from H3 to H2 so the heading levels progress in order without skipping.
+
+After the fix, the Nu HTML Checker reported no errors.
+<img width="1030" height="786" alt="Nu_HTML validatior after" src="https://github.com/user-attachments/assets/489dbc1f-439e-492b-b842-f08df9a60aa7" />
+
